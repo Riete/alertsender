@@ -1,0 +1,1 @@
+docker run -d -p 80:80 -v /app/docker_data/alertsender:/usr/src/app/data --name alertsender registry.cn-hangzhou.aliyuncs.com/riet/alertsender:latest
