@@ -1,5 +1,1 @@
 .idea
-*.pyc
-alert_sender/__pycache__/
-alertsender/__pycache__/
-templates/
