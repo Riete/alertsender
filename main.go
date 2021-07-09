@@ -124,7 +124,12 @@ func (alert Alert) SendDingTalk(webhook, secret string) {
 		} else {
 			message += alert.StartsAt() + "\n\n---" + alert.AlertsAt()
 		}
-		notify.SendDingTalkMarkdown(title, message, webhook, secret)
+		level := strings.ToLower(severity)
+		if level == "p0" || level == "p1" || level == "p2" {
+			log.Println(notify.SendDingTalkMarkdown(title, message, webhook, secret, true))
+		} else {
+			log.Println(notify.SendDingTalkMarkdown(title, message, webhook, secret, false))
+		}
 	}
 }
 

@@ -33,6 +33,8 @@ github.com/pkg/sftp v1.10.0/go.mod h1:NxmoDg/QLVWluQDUYG7XBZTLUpKeFa8e3aMf1BfjyH
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/riete/go-tools v1.0.7 h1:h7AqEoBG8soiRiEa31EETL5romgeOlKVqkBcLcPVw2Q=
 github.com/riete/go-tools v1.0.7/go.mod h1:3m7M34T5rm9z2od8cEBIoNh8heM722tsBIYMJYkSk+w=
+github.com/riete/go-tools v1.0.8 h1:xlbnoBML2pkXS4314WHkukRPquxiyBlWZ5Dc8+THodQ=
+github.com/riete/go-tools v1.0.8/go.mod h1:3m7M34T5rm9z2od8cEBIoNh8heM722tsBIYMJYkSk+w=
 github.com/riete/requests v1.0.2 h1:02Vqke+HEqRl+vIhNHWpINkmiYGiZy+AKmtie65s2UM=
 github.com/riete/requests v1.0.2/go.mod h1:+3dkH6BzCtt3s2r9aLCp/imlWiEjRpJCsdSXFqk7A1g=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
