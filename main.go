@@ -26,7 +26,7 @@ func ParseConfig(channel string) map[string]string {
 
 func GetDingTalkChannel(name string) (webhook, secret string) {
 	conf := ParseConfig(DingTalk)
-	channel := strings.Split(conf[name], ":")
+	channel := strings.Split(conf[name], "|")
 	return channel[0], channel[1]
 }
 
