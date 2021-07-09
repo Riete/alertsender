@@ -139,6 +139,7 @@ func main() {
 		name := c.Param("name")
 		webhook, secret := GetDingTalkChannel(name)
 		alert.SendDingTalk(webhook, secret)
+		c.JSON(200, "ok")
 	})
 	route.Run(":8000")
 }
