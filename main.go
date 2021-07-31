@@ -52,8 +52,8 @@ func (alert Alert) ConvertUtcToLocal(utcTime string) string {
 		utcStr += "Z"
 	}
 	location, _ := time.LoadLocation("Asia/Shanghai")
-	localTime, _ := time.ParseInLocation(timeLayoutStr, utcStr, location)
-	return localTime.Format("2006-01-02 15:04:05")
+	localTime, _ := time.Parse(timeLayoutStr, utcStr)
+	return localTime.In(location).Format("2006-01-02 15:04:05")
 }
 
 func (alert Alert) FStatus() string {
@@ -134,6 +134,7 @@ func (alert Alert) SendDingTalk(webhook, secret string) {
 }
 
 func main() {
+	a := Alert{}
 	route := gin.Default()
 	route.POST("/alert-receiver/:name", func(c *gin.Context) {
 		alert := Alert{}
