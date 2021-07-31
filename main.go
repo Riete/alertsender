@@ -134,7 +134,6 @@ func (alert Alert) SendDingTalk(webhook, secret string) {
 }
 
 func main() {
-	a := Alert{}
 	route := gin.Default()
 	route.POST("/alert-receiver/:name", func(c *gin.Context) {
 		alert := Alert{}
